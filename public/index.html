@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Week 2 API</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #0f172a;
+      color: #e2e8f0;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+    }
+    .card {
+      background: #1e293b;
+      border: 1px solid #334155;
+      border-radius: 12px;
+      padding: 2.5rem;
+      max-width: 600px;
+      width: 100%;
+    }
+    h1 { font-size: 2rem; color: #38bdf8; margin-bottom: 0.5rem; }
+    p  { color: #94a3b8; margin-bottom: 1.5rem; }
+    .endpoint {
+      background: #0f172a;
+      border-left: 3px solid #38bdf8;
+      padding: 0.75rem 1rem;
+      border-radius: 0 6px 6px 0;
+      margin-bottom: 0.75rem;
+      font-family: monospace;
+      font-size: 0.95rem;
+    }
+    .method { font-weight: bold; margin-right: 0.5rem; }
+    .get    { color: #4ade80; }
+    .post   { color: #fb923c; }
+    .desc   { color: #94a3b8; font-size: 0.85rem; margin-top: 0.25rem; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>My Week 2 API! 🚀</h1>
+    <p>Welcome to the BeTechified Week 2 Express assignment.</p>
+
+    <div class="endpoint">
+      <span class="method get">GET</span> /api
+      <div class="desc">Returns "My Week 2 API!"</div>
+    </div>
+    <div class="endpoint">
+      <span class="method post">POST</span> /user
+      <div class="desc">Body: { name, email } → "Hello, [name]!"</div>
+    </div>
+    <div class="endpoint">
+      <span class="method get">GET</span> /user/:id
+      <div class="desc">Returns "User [id] profile"</div>
+    </div>
+  </div>
+</body>
+</html>
